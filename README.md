@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# Retail Growth & Seasonal Intelligence Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and data-rich retail intelligence dashboard built using React, TypeScript, Tailwind CSS, and Recharts. This project aims to track and analyze retail metrics, including total sales, average order value, conversion rates, and sales growth. It features a dark/light mode, dynamic data filtering, and detailed data visualizations to empower businesses with key insights.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Flawless interface whether on desktop, tablet, or mobile.
+- **Dark/Light Mode**: User-friendly theme-switching capabilities.
+- **KPI Metrics**: Real-time snapshot of Total Sales, Average Order Value, Conversion Rate, and Growth.
+- **Interactive Visualizations**: Powerful charts using Recharts for categorical, regional, and seasonal sales analysis.
+- **Data Table**: Searchable, paginated transaction table for tracking recent orders.
+- **Dynamic Filtering**: Date, region, and category filters to dive deep into exactly what you want to see.
 
-## Expanding the ESLint configuration
+## How to View and Run the Dashboard Locally
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these step-by-step instructions to get the dashboard up and running on your local machine:
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your computer. Node.js comes with `npm` (Node Package Manager), which is required to install the project dependencies.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Step 1: Open the Project
+Ensure you are in the project root directory (`retail-dashboard`) in your terminal or command prompt.
+
+### Step 2: Install Dependencies
+Before running the dashboard, you will need to install all the required libraries and dependencies. Run the following command in your terminal:
+```bash
+npm install
+```
+*(Wait for the installation to complete. This may take a few moments.)*
+
+### Step 3: Start the Development Server
+Once the dependencies are installed, you can start up the local development server by executing this command:
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Step 4: Open the Dashboard in your Browser
+After running the command in Step 3, the terminal will display a local server link. It typically looks like this:
 ```
+  ➜  Local:   http://localhost:5173/
+```
+- Hold down the **Ctrl** key (or **Cmd** on Mac) and click the link in your terminal, OR
+- Open your preferred web browser (e.g., Chrome, Edge, Safari) and type `http://localhost:5173/` into the address bar.
+
+### Step 5: Explore
+You can now interact with the dashboard! Try toggling the Dark Mode in the top right corner, switching tabs between 'Overview', 'Analytics', and 'Reports', and exploring the data charts.
+
+## Technologies Used
+- Frontend: React 18, Vite
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Icons: Lucide React
+- Charts: Recharts
