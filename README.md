@@ -50,4 +50,4 @@ You can now interact with the dashboard! Try toggling the Dark Mode in the top r
 - Language: TypeScript
 - Styling: Tailwind CSS
 - Icons: Lucide React
-- Charts: Recharts
+- Charts: Recharts.
