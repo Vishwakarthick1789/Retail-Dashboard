@@ -29,7 +29,7 @@ npm install
 *(Wait for the installation to complete. This may take a few moments.)*
 
 ### Step 3: Start the Development Server
-Once the dependencies are installed, you can start up the local development server by executing this command:
+Once the dependencies are installed, now you can start up the local development server by executing this command:
 ```bash
 npm run dev
 ```
